@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+
+nav ul{
+	display: inline-flex;
+	list-style: none;
+	padding: 20px 60px;
+	background: #0b1d29;
+	width: 100%;
+}
+nav ul li{
+	margin-left: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 19px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: #10dbe7;
+}
+nav ul li .cari{
+	height: 100%;
+	width: 240px;
+	border-radius: 5px;
+	border: none;
+	padding: 3px 15px;
+	font-size: 15px;
+	color: #000;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 65vh;
+	background: #102a3b;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 20px;
+}
+.logo{
+	position: relative;
+}
+.logo h1{
+	position: absolute;
+	margin-left: 50%;
+	transform: translate(-50%, -30%);
+	font-size: 9em;
+}
+.logo h1:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 5px #f9f8e5;
+}
+.logo h1:nth-child(2){
+	color: #f9f8e5;
+	animation: aer 4.5s ease-in-out infinite;
+}
+.logo h5{
+	margin-top: 15%;
+	font-size: 25px;
+	text-align: center;
+}
+@keyframes aer{
+	0%,100%{
+		clip-path: polygon(0 46%, 20% 49%, 35% 55%, 46% 66%, 64% 64%, 81% 59%, 100% 57%, 100% 100%, 1% 99%);
+	}
+	50%{
+		clip-path: polygon(0 57%, 11% 60%, 28% 66%, 46% 66%, 60% 56%, 79% 50%, 100% 47%, 100% 100%, 1% 99%);
+	}
+}
+
+.judul{
+	text-align: center;
+	font-size: 35px;
+	color: #000;
+	padding-top: 20px;	
+}
+.container2 img{
+	max-width: 100px;
+}
+.container2{
+	width: 100%;
+	height: 88vh;
+	display: flex;
+}
+.container2 h2{
+	margin: 15px 0;
+	color: #333;
+	text-align: center;
+	font-size: 1.5em
+}
+.card{
+	margin-left: 35px;
+}
+.card.daf{
+	margin-top: 27px;
+}
+.tampilan{
+	max-width: 280px;
+	max-height: 380px;
+	background: #b3c6b3;
+	transition: 0.8s;
+}
+.tampilan1{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 90px;
+	z-index: 1;
+	transform: translateY(100px);
+}
+.container2 .card:hover .tampilan.tampilan1{
+	transform: translateY(120px);
+	background-color: #e2f7ec;
+}
+.tampilan1 .isi{
+	opacity: 0.8;
+}
+.tampilan2{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 20px;
+	box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	transform: translateY(-280px);
+}
+.container2 .card:hover .tampilan.tampilan2 {
+	background-color: #102a3b;
+	z-index: 1;
+}
+.tampilan2 img{
+	border-radius: 50%;
+	margin-left: 30%;
+	margin-bottom: 15px;
+}
+.tampilan2 h6{
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.tampilan2 .isi a{
+	position: absolute;
+	bottom: 17px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	color: #fff;
+	padding: 10px 20px;
+	border : 2px solid #fff;
+}
+.tampilan2 .isi a:hover{
+	color: #000;
+	background-color: #fff;
+}
+
+footer{
+	background: #0b1d29;
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1250px){
+	.container2{
+		flex-wrap: wrap;
+		height: 1030px;
+	}
+	.card{
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.card{
+		margin-left: 14%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.logo h5{
+		margin-top: 18%;
+		font-size: 20px;
+	}
+
+	.container2{
+		flex-direction: column;
+		height: 1800px;
+	}
+	.card{
+		margin-left: 35%;
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 690px){
+	nav ul li .cari{
+		width: 200px;
+		height: 80%;
+		font-size: 14px;
+	}
+	nav ul li a{
+		font-size: 18px;
+	}
+
+	.card{
+		margin-left: 30%;
+	}
+}
+
+@media screen and (max-width: 611px){
+	nav ul li .cari{
+		width: 180px;
+		height: 90%;
+		font-size: 12px;
+	}
+	nav ul{
+		padding: 20px 30px;
+	}
+	nav ul li a{
+		font-size: 14px;
+	}
+	nav ul li{
+		margin-left: 10px;
+	}
+
+	.container{
+		min-height: 40vh;
+	}
+	.logo h1{
+		font-size: 7em;
+	}
+	.logo h5{
+		font-size: 16px;
+		padding: 0 15px;
+		margin-top: 20%;
+	}
+
+	.judul{
+		font-size: 26px;
+	}
+	.container2{
+		flex-wrap: wrap;
+		height: 1800px;
+	}
+	.card{
+		margin-left: 25%;
+	}
+}
+
+@media screen and (max-width: 411px){
+	nav ul li .cari{
+		width: 110px;
+		height: 80%;
+		font-size: 12px;
+	}
+	nav ul{
+		padding: 20px 30px;
+	}
+	nav ul li a{
+		font-size: 14px;
+	}
+	nav ul li{
+		margin-left: 10px;
+	}
+
+	.container{
+		min-height: 40vh;
+	}
+	.logo h1{
+		font-size: 7em;
+	}
+	.logo h5{
+		font-size: 16px;
+		padding: 0 15px;
+		margin-top: 20%;
+	}
+
+	.judul{
+		font-size: 26px;
+	}
+	.container2{
+		flex-direction: column;
+		height: 1800px;
+	}
+	.tampilan2 h6{
+		font-size: 20px;
+	}
+	.tampilan2{
+		font-size: 14px;
+	}
+	.tampilan2 .isi a{
+		padding: 5px 30px;
+	}
+	.card{
+		margin: 0 15% 25%;
+	}
+
+}

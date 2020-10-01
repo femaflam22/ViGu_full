@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	background: #0b1d29;
+	padding: 0 10px;
+}
+.registrasi{
+	/* KUNCI UTAMA RESPONSIF ITU DI max-width */
+	max-width: 500px;
+	width: 100%;
+	background: #f9f8e5;
+	margin: 20px auto;
+	padding: 30px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+}
+.registrasi .title{
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 25px;
+	color: #102a3b;
+	text-transform: uppercase;
+	text-align: center;
+}
+.registrasi a{
+	margin-left: 46%;
+	font-size: 12px;
+	color: #102a3b;
+}
+.registrasi .form{
+	width: 100%;
+}
+.registrasi .form .data{
+	margin-bottom: 14px;
+	display: flex;
+	align-items: center;
+}
+.registrasi .form .data label{
+	/* width = biar si inputannya sama semua sejajar */
+	width: 200px;
+	color: #333;
+	margin-right: 10px;
+	font-size: 15px;
+}
+.registrasi .form .data .input,
+.registrasi .form .data .textarea{
+	width: 100%;
+	outline: none;
+	border: 1px solid #102a3b;
+	font-size: 15px;
+	padding: 4px 10px;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+} 
+.registrasi .form .data .textarea{
+	/* biar textbox gabisa diubah ukurannya sma user */
+	resize: none;
+	height: 125px;
+}
+.registrasi .form .data .pilihan{
+	position: relative;
+	width: 100%;
+	height: 40px;
+}
+.registrasi .form .data .pilihan select{
+	/* biar tanda panah kebawah ilang */ 
+	-webkit-appearance : none;
+	appearance : none;
+	border: 1px solid #102a3b;
+	width: 100%;
+	height: 100%;
+	padding: 6px 10px;
+	border-radius: 3px;
+	outline: none;
+}
+.registrasi .form .data .pilihan:before{
+	content: "";
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	border: 8px solid;
+	/* buat bikin tanda panah, semuanya kode di before ini sih */
+	border-color: #333 transparent transparent transparent;
+	/* kan kalo gapke ini list nya keluar cmn pas klik ada kata2nya, ditanda panahnya gabisa
+	kalo make tanda di tanda panah klik bisa */
+	pointer-events: none;
+}
+.registrasi .form .data .input:focus,
+.registrasi .form .data .textarea:focus{
+	border: 1px solid #b3c6b3;
+}
+.registrasi .form .data p{
+	font-size: 14px;
+	color: #333;
+}
+.registrasi .form .data .cek{
+	width: 15px;
+	height: 15px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+.registrasi .form .data .cek input[type="checkbox"]{
+	/* biar si checkbox nya ga keliatan soalnya
+	yg mau diliatin, yg checkmark
+	soalnya dia lebih rapih */
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.registrasi .form .data .cek .checkmark{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #102a3b;
+	display: block;
+	position: relative;
+}
+.registrasi .form .data .cek .checkmark:before{
+	/* ngebentuk tanda ceklis */
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 5px;
+	height: 2px;
+	border: 2px solid;
+	border-color: transparent transparent #fff #fff;
+	transform: rotate(-45deg);
+	/* di none in dulu biar ga keliatan/berfungsi */
+	display: none;
+}
+.registrasi .form .data .cek input[type="checkbox"]:checked ~ .checkmark{
+	background: #102a3b;
+	opacity: 0.6;
+}
+.registrasi .form .data .cek input[type="checkbox"]:checked ~ .checkmark:before{
+	/* none nya diganti block biar keliatan */
+	display: block;
+}
+.registrasi .form .data .btn{
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 17px;
+	border: 0;
+	background: #102a3b;
+	color: #f9f8e5;
+	cursor: pointer;
+	border-radius: 3px;
+	outline: none;
+}
+.registrasi .form .data:last-child{
+	margin-bottom: 0;
+}
+.registrasi .form .data .btn:hover{
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 435px){
+	.registrasi .form .data{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.registrasi .form .data label{
+		margin-bottom: 5px;
+	}
+	.registrasi .form .data.cekR{
+		flex-direction: row;
+	}
+}
