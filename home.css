@@ -111,6 +111,8 @@ nav ul li .cari{
 }
 .tampilan1{
 	position: relative;
+	max-width: 280px;
+	max-height: 380px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -304,7 +306,7 @@ footer{
 		padding: 5px 30px;
 	}
 	.card{
-		margin: 0 15% 25%;
+		margin: 0% 15% 25% 15%;
 	}
 
 }
