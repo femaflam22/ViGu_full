@@ -261,7 +261,7 @@ footer{
 
 @media screen and (max-width: 411px){
 	nav ul li .cari{
-		width: 110px;
+		width: 130px;
 		height: 80%;
 		font-size: 12px;
 	}
@@ -292,7 +292,7 @@ footer{
 	}
 	.container2{
 		flex-direction: column;
-		height: 1800px;
+		height: 1950px;
 	}
 	.tampilan2 h6{
 		font-size: 20px;
