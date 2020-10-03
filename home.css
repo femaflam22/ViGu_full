@@ -306,7 +306,9 @@ footer{
 		padding: 5px 30px;
 	}
 	.card{
-		margin: 0% 15% 25% 15%;
+		margin: 45px 65px;
 	}
-
+	.tiga{
+		margin-bottom: 80px;
+	}
 }
