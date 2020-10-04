@@ -161,7 +161,7 @@ body{
 	opacity: 0.6;
 }
 
-@media screen and (max-width: 435px){
+@media screen and (max-width: 411px){
 	.registrasi .form .data{
 		flex-direction: column;
 		align-items: flex-start;
@@ -171,5 +171,8 @@ body{
 	}
 	.registrasi .form .data.cekR{
 		flex-direction: row;
+	}
+	.registrasi a{
+		margin-left: 44%;
 	}
 }

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ViGu, Guru Virtual-mu!</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>ViGu, Guru Virtual-mu!</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightslider.css">
+	<script type="text/javascript" src="js/Jquery.js"></script>
+	<script type="text/javascript" src="js/lightslider.js"></script>
 </head>
 <body>
-	<nav>
+	<nav class="atas">
 		<ul>
 			<li>
 				<input type="Search" name="cari" placeholder="cari guru" class="cari">
@@ -26,98 +31,302 @@
 	</article>
 
 	<article>
-		<h1 class="judul"> Daftar Guru Pengajar Tersedia </h1>
-		<div class="container2">
-			<div class="card">
-				<div class="tampilan tampilan1">
-					<div class="isi">
-						<img src="image/tutor.png">
-						<h2>TUTOR 1</h2>
-					</div>
-				</div>
-				<div class="tampilan tampilan2">
-					<div class="isi">
-						<img src="image/guru1.png">
-						<h6>FEMA FLAM</h6>
-						<p>
-							Guru SMK Jurusan Perangkat Lunak. Ayo belajar dengan beliau terkait HTML, CSS, PHP, JS, MySQL!
-								<br>
-								email : hoomanswag@gmail.com
-								WhatsApp : 085675315872
-						</p>
-						<a href="pengajuan/pengajuan.html">ajukan</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="card">
-				<div class="tampilan tampilan1">
-					<div class="isi">
-						<img src="image/tutor.png">
-						<h2>TUTOR 2</h2>
-					</div>
-				</div>
-				<div class="tampilan tampilan2">
-					<div class="isi">
-						<img src="image/guru2.jpeg">
-						<h6>NELIYANA ULF</h6>
-						<p>
-							Guru SMA. Ayo belajar dengan beliau terkait apapun itu yang berhubungan dengan Matematika juga Bahasa Inggris!
-								<br>
-								email : upayaupay@gmail.com
-								WhatsApp : 082913715419
-						</p>
-						<a href="pengajuan/pengajuan.html">ajukan</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="card tiga">
-				<div class="tampilan tampilan1">
-					<div class="isi">
-						<img src="image/tutor.png">
-						<h2>TUTOR 3</h2>
-					</div>
-				</div>
-				<div class="tampilan tampilan2">
-					<div class="isi">
-						<img src="image/guru3.jpeg">
-						<h6>NDEVINA S.</h6>
-						<p>
-							Guru SMA. Ayo belajar dengan beliau terkait apapun itu yang berhubungan dengan Bahasa Indonesia juga PAI!
-								<br>
-								email : vinande21@gmail.com
-								WhatsApp : 086753720821
-						</p>
-						<a href="pengajuan/pengajuan.html">ajukan</a>
-					</div>
-				</div>
-			</div>	
-
-			<div class="card daf">
-				<div class="tampilan tampilan1">
-					<div class="isi">
-						<img src="image/join.png">
-						<h2>DAFTAR</h2>
-					</div>
-				</div>
-				<div class="tampilan tampilan2">
-					<div class="isi">
-						<img src="image/join.png">
-						<h6>INGIN MENJADI TUTOR?</h6>
-						<p>
-							Kamu juga punya kesempatan menjadi tutor loh! ayo daftar kan dirimu dan jangan lupa penuhi persyaratannya ya!
-						</p>
-						<a href="pendaftaran/pendaftaran.html">ketentuan</a>
-					</div>
-				</div>
-			</div>		
-		</div>
+		<h2 class="judul">Daftar Guru Tersedia</h2>
 	</article>
+
+	<article class="bagian3">
+
+		<ul id="autoWidth" class="cs-hidden">
+  			<li class="item-a">
+  				<!-- -------------1---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor1.png" alt="Testimoni Siswa 1">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Jungwoo</a>
+						<span>Khusus mata pelajaran bahasa dan sastra inggris.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Pd</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-b">
+  				<!-- -------------2---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor2.png" alt="Testimoni Siswa 2">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Mawar</a>
+						<span>Khusus mata pelajaran matematika.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Pd</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-c">
+  				<!-- -------------3---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor3.png" alt="Testimoni Siswa 3">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Jaehyun</a>
+						<span>Khusus pemrograman web.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Kom</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-d">
+  				<!-- -------------4---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor5.png" alt="Testimoni Siswa 5">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Nana</a>
+						<span>Khusus mata pelajaran fisika.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Pd</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-e">
+  				<!-- -------------5---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor9.png" alt="Testimoni Siswa 9">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Donghae</a>
+						<span>Khusus mata pelajaran matematika.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Pd</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-f">
+  				<!-- -------------6---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor4.png" alt="Testimoni Siswa 4">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Ji Chang-Wook</a>
+						<span>Khusus mata pelajaran bahasa indonesia.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Pd</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-g">
+  				<!-- -------------8---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor6.png" alt="Testimoni Siswa 6">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Momo</a>
+						<span>Khusus mata pelajaran biologi.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="pengajuan/pengajuan.html" class="gelar">S.Kes</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-h">
+  				<!-- -------------8---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor7.png" alt="Testimoni Siswa 7">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Mingyu</a>
+						<span>Khusus pemrograman android.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Kom</a>
+				</div>
+			</div>
+
+  			</li>
+
+  			<li class="item-i">
+  				<!-- -------------9---------- -->
+  				<div class="box">
+					<!-- box buat gambarnya -->
+					<div class="gambar-slide">
+						<img src="image/tutor8.png" alt="Testimoni Siswa 8">
+						<!-- overlayer : hover gambar nanti -->
+						<div class="overlayer">
+						<!-- button ajukan -->
+						<!-- buy-btn itu dia class yang emang uda ada dari sononya, kalo ganti nama gaakan muncul bg sm bentuk buttonnya -->
+						<a href="pengajuan/pengajuan.html" class="buy-btn">Jadi Murid</a>
+						</div>
+					</div>
+				<!-- kotak yang isinya tulisan -->
+				<div class="kotak-tulisan">
+					<div class="tulisan">
+						<a href="#">Yuna</a>
+						<span>Khusus pemrograman berorientasi object.</span>
+					</div>
+					<!-- gelar yang ada di samping -->
+					<a href="#" class="gelar">S.Kom</a>
+				</div>
+			</div>
+
+  			</li>
+
+		</ul>
+
+	</article>
+
+	<hr>
+
+	<article>
+		<h1 class="judul-kedua">mereka telah membuktikan...</h1>
+
+			<div class="card">
+				<div class="kotak-testimoni">
+				<div class="testimoni">
+						<img src="image/pp.jpg">
+						<h6>Fema Flamelina P.</h6>
+						<p>
+							Berhasil menjadi juara dua umum tingkat 11.
+						</p>
+				</div>
+
+				<div class="testimoni">
+						<img src="image/pp.jpg">
+						<h6>Siti Ndevina S.</h6>
+						<p>
+							Berhasil menyelesaikan US dengan nilai rata-rata 87.
+						</p>
+				</div>
+
+				<div class="testimoni">
+						<img src="image/pp.jpg">
+						<h6>Neliyana Ulfiah</h6>
+						<p>
+							Berhasil menjadi juara tiga olimpiade matematika tingkat nasional.
+						</p>
+				</div>
+
+				<div class="testimoni">
+						<img src="image/pp.jpg">
+						<h6>Muhammad Azka</h6>
+						<p>
+							Berhasil lulus dari UTBK dan menjadi mahasiswa.
+						</p>
+				</div>
+				</div>
+
+				<div class="ketentuan">
+				<div class="testimoni daftar">
+					<p>Ingin daftar menjadi pengajar?</p>
+					<a href="pendaftaran/pendaftaran.html">Ketentuan</a>
+				</div>
+				</div>
+			</div>
 
 	<footer>
 		<p>Fema Flamelina Putri &#169; 2020</p>
 	</footer>
 
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

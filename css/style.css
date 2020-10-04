@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav ul{
+	display: inline-flex;
+	list-style: none;
+	padding: 20px 60px;
+	background: #0b1d29;
+	width: 100%;
+}
+nav ul li{
+	margin-left: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 19px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+nav ul li a:hover{
+	color: #10dbe7;
+}
+nav ul li .cari{
+	height: 100%;
+	width: 240px;
+	border-radius: 5px;
+	border: none;
+	padding: 3px 15px;
+	font-size: 15px;
+	color: #000;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 65vh;
+	background: #102a3b;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 20px;
+}
+.logo{
+	position: relative;
+}
+.logo h1{
+	position: absolute;
+	margin-left: 50%;
+	transform: translate(-50%, -30%);
+	font-size: 9em;
+}
+.logo h1:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 5px #f9f8e5;
+}
+.logo h1:nth-child(2){
+	color: #f9f8e5;
+	animation: aer 4.5s ease-in-out infinite;
+}
+.logo h5{
+	margin-top: 15%;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+}
+@keyframes aer{
+	0%,100%{
+		clip-path: polygon(0 46%, 20% 49%, 35% 55%, 46% 66%, 64% 64%, 81% 59%, 100% 57%, 100% 100%, 1% 99%);
+	}
+	50%{
+		clip-path: polygon(0 57%, 11% 60%, 28% 66%, 46% 66%, 60% 56%, 79% 50%, 100% 47%, 100% 100%, 1% 99%);
+	}
+}
+
+
+.judul{
+	font-size: 35px;
+	color: #000;
+	margin-left: 37%;	
+	padding-top: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.bagian3{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box{
+	width: 265px;
+	height: 460px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	overflow: hidden;
+	margin: 19px;
+}
+.gambar-slide{
+	height: 360px;
+	position: relative;
+}
+.gambar-slide img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.kotak-tulisan{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-family: calibri;
+	color: #333;
+}
+.tulisan{
+	display: flex;
+	flex-direction: column;
+}
+.bagian3 a{
+	color: #222222;
+	text-decoration: none;	
+	margin: 5px 0px;
+	font-weight: bold;
+	padding-right: 8px;
+}
+.gelar{
+	color: #333333;
+	font-family: poppins;
+	font-weight: bold;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+.overlayer{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(92,95,240,0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.buy-btn{
+	width: 160px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	color: #252525;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: calibri;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.buy-btn:hover{
+	color: #fff;
+	background: #1e252d;
+	transition: all ease 0.5s;
+}
+.overlayer{
+	visibility: hidden;
+}
+.gambar-slide:hover .overlayer{
+	visibility: visible;
+	animation: layar 0.3s;
+}
+@keyframes layar{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.judul-kedua{
+	font-size: 30px;
+	color: #000;
+	margin-left: 35%;	
+	padding-top: 25px;
+	padding-bottom: 55px;
+	font-family: 'Montserrat', sans-serif;
+}
+.card{
+	max-width: 1300px;
+	height: 40vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card .testimoni img{
+	max-width: 50px;
+	border-radius: 100%;
+	margin-bottom: 10px;
+}
+.testimoni{
+	max-width: 230px;
+	margin-left: 20px;
+	margin-top: 15px;
+	background: #fff;
+	float: left;
+	padding: 15px;
+	font-size: 16px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.daftar{
+	width: 180px;
+	height: 150px;
+	background: #378cb9;
+	margin-top: 50px;
+	color: #fff;
+	box-shadow: 12px 12px 30px rgba(0,0,0,0.6);
+}
+.daftar p{
+	padding-bottom: 25px;
+}
+.daftar a{
+	border: 5px solid #1e252d;
+	padding: 5px 15px;
+	text-decoration: none;
+	color: #fff;
+}
+.daftar a:hover{
+	background: #fff;
+	color: #1e252d;
+}
+.testimoni h6{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+footer{
+	color: #fff;
+	background: #0b1d29;
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 411px){
+	nav ul li .cari{
+		width: 130px;
+		height: 80%;
+		font-size: 12px;
+	}
+	nav ul{
+		padding: 20px 30px;
+	}
+	nav ul li a{
+		font-size: 14px;
+	}
+	nav ul li{
+		margin-left: 10px;
+	}
+
+	.container{
+		min-height: 40vh;
+	}
+	.logo h1{
+		font-size: 6em;
+	}
+	.logo h5{
+		font-size: 16px;
+		margin-top: 20%;
+		padding: 0px 10px;
+	}
+
+	.judul{
+		font-size: 24px;
+		margin-left: 21%;
+	}
+
+	.judul-kedua{
+		font-size: 22px;
+		margin-left: 10%;
+	}
+	.card{
+		height: 142vh;
+	}
+	.testimoni h6{
+		font-size: 16px;
+	}
+	.testimoni{
+		font-size: 14px;
+		margin-left: 85px;
+	}
+	.daftar{
+		margin-top: 0px;
+		margin-left: 105px;
+		height: 130px;
+	}
+}
