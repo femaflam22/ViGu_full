@@ -250,7 +250,77 @@ footer{
 	font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width: 411px){
+@media(max-width: 1024px){
+	nav ul li .cari{
+		width: 260px;
+		height: 100%;
+		font-size: 16px;
+	}
+	nav ul{
+		padding: 40px 30px;
+	}
+	nav ul li a{
+		font-size: 18px;
+	}
+
+	.container{
+		min-height: 40vh;
+	}
+
+	.judul{
+		margin-left: 35%;
+	}
+	.bagian3{
+		height: 48vh;
+	}
+}
+@media(max-width: 768px){
+	.judul{
+		margin-left: 30%;
+	}
+	.bagian3{
+		height: 70vh;
+	}
+
+	.judul-kedua{
+		margin-left: 26%;
+	}
+	.card{
+		height: 65vh;
+	}
+}
+@media(max-width: 540px){
+	nav ul{
+		padding: 20px 20px;
+	}
+	nav ul li .cari{
+		width: 90%;
+	}
+
+	.logo h1{
+		font-size: 5.8em;
+	}
+	.logo h5{
+		font-size: 15px;
+		margin-top: 22%;
+	}
+
+	.judul{
+		font-size: 24px;
+		margin-left: 30%;
+	}
+	.bagian3{
+		height: 80vh;
+	}
+
+	.judul-kedua{
+		font-size: 20px;
+	}
+	.card{
+		height: 90vh;
+	}
+}
+@media(max-width: 414px){
 	nav ul li .cari{
 		width: 130px;
 		height: 80%;
@@ -288,18 +358,108 @@ footer{
 		margin-left: 10%;
 	}
 	.card{
-		height: 142vh;
+		height: 138vh;
 	}
 	.testimoni h6{
-		font-size: 16px;
+		font-size: 18px;
 	}
 	.testimoni{
-		font-size: 14px;
-		margin-left: 85px;
+		font-size: 16px;
+		margin-left: 20%;
 	}
 	.daftar{
 		margin-top: 0px;
 		margin-left: 105px;
 		height: 130px;
+	}
+}
+@media(max-width: 360px){
+	.testimoni{
+		margin-left: 65px;
+	}
+	.daftar{
+		margin-left: 90px;
+	}
+
+	.card{
+		height: 150vh;
+	}
+}
+@media(max-width: 320px){
+	nav ul li .cari{
+		width: 100px;
+		height: 90%;
+	}
+
+	.logo h5{
+		font-size: 14px;
+	}
+
+	.judul{
+		margin-left: 12%;
+	}
+	.bagian3{
+		height: 100vh;
+	}
+
+	.judul-kedua{
+		font-size: 18px;
+	}
+	.card{
+		height: 170vh;
+	}
+	.testimoni{
+		margin-left: 14%;
+	}
+	.daftar{
+		margin-left: 40%;
+	}
+
+	footer{
+		font-size: 14px;
+	}
+}
+@media(max-width: 280px){
+	nav ul li .cari{
+		width: 120px;
+		height: 70%;
+	}
+	nav ul{
+		padding: 10px;
+	}
+	nav ul li a{
+		font-size: 12px;
+	}
+
+	.logo h1{
+		font-size: 5em;
+	}
+	.logo h5{
+		font-size: 14px;
+	}
+
+	.judul{
+		font-size: 22px;
+	}
+	.bagian3{
+		height: 85vh;
+	}
+
+	.judul-kedua{
+		font-size: 18px;
+		margin-left: 16px;
+	}
+	.card{
+		height: 160vh;
+	}
+	.testimoni{
+		margin-left: 10%;
+	}
+	.daftar{
+		margin-left: 32%;
+	}
+
+	footer{
+		font-size: 16px;
 	}
 }

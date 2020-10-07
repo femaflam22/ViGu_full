@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: #0b1d29;
+}
+
+.wrap{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 450px;
+	width: 100%;
+	background-color: #f9f8e5;
+	border-radius: 5px;
+	padding: 40px;
+}
+.wrap h2{
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #333;
+}
+.wrap .data{
+	margin-bottom: 10px;
+}
+.wrap .data input[type="text"],
+.wrap textarea{
+	width: 100%;
+	border: 1px solid #0b1d29;
+	padding: 10px;
+}
+.wrap textarea{
+	height: 80px;
+	resize: none;
+}
+.wrap .btn input[type="submit"],
+.wrap .btn button{
+	border: 0;
+	margin-top: 15px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #0b1d29;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+.wrap a{
+	color: #0b1d29;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.wrap #error{
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #e82f41;
+	color: #fff;
+	text-align: center;
+	/* keadaan dia pas muncul */
+	transition: all 0.5s ease;
+}

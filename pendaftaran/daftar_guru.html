@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Pendaftaran</title>
+	<link rel="stylesheet" type="text/css" href="daftar_guru.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="daftar_guru.js"></script>
+</head>
+<body>
+
+	<div class="wrap">
+		<h2>Form Pendaftaran</h2>
+		<div id="error"></div>
+
+		<form id="formulir" onsubmit="return validation()">
+			<div class="data">
+				<input type="text" placeholder="nama lengkap" id="nama" autocomplete="off">
+			</div>
+			<div class="data">
+				<input type="text" placeholder="kelas" id="kelas" autocomplete="off">
+			</div>
+			<div class="data">
+				<input type="text" placeholder="mata pelajaran yang diinginkan" id="pend" autocomplete="off">
+			</div>
+			<div class="data">
+				<input type="text" placeholder="no. telepon (08)" id="telp" autocomplete="off">
+			</div>
+			<div class="data">
+				<input type="text" placeholder="email" id="email" autocomplete="off">
+			</div>
+			<div class="data">
+				<textarea id="pesan" placeholder="ceritakan kebiasaanmu saat belajar ataupun tujuanmu kedepannya"></textarea>
+			</div>
+			<div class="btn">
+				<input type="submit" value="daftar">
+			</div>
+			<a href="../index.html">kembali</a>
+		</form>
+	</div>
+
+</body>
+</html>

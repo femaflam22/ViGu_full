@@ -9,35 +9,35 @@
 <body>
 	<div class="container">
 		<div class="atas">
-			<h3>Kirim pertanyaanmu disini!</h3>
+			<h3>Ayo menjadi pengajar di ViGu!</h3>
 
 			<form>
 				<div class="data-kolom">
 					<div class="data">
-						<label>Nama</label>
-						<input type="text" placeholder="Aldric Bara">
+						<label>Nama Lengkap</label>
+						<input type="text" placeholder="Fema Flamelina Putri" id="nama" autocomplete="off" required>
 					</div>
 					<div class="data-isi">
 						<label>Nomor Telepon</label>
-						<input type="text" placeholder="086787462647">
+						<input type="text" placeholder="086787462647" id="telp" autocomplete="off" required>
 					</div>
 				</div>
 
 				<div class="data-kolom">
 					<div class="data-isi">
 						<label>Email</label>
-						<input type="email" placeholder="baraAldr@gmail.com">
+						<input type="email" placeholder="femaflam22@gmail.com" id="email" autocomplete="off" required>
 					</div>
 					<div class="data-isi">
-						<label>Subjek</label>
-						<input type="text" placeholder="biaya bimbingan">
+						<label>Pendidikan Terakhir</label>
+						<input type="text" placeholder="SMKS Wikrama Bogor" id="sekolah" autocomplete="off" required>
 					</div>
 				</div>
 
-				<label class="textbox">Pesan</label>
-				<textarea placeholder="pertanyaan atau pesanmu"></textarea>
+				<label class="textbox">Pelengkap</label>
+				<textarea placeholder="link portofolio/website/pendukung lainnya" id="pesan" required></textarea>
 
-				<button type="submit" > kirim </button>
+				<button type="submit" id="buttonSubmit" onclick="validate()"> kirim </button>
 				<button>
 				<a href="../index.html">kembali</a>
 				</button>
@@ -72,6 +72,8 @@
 
 		</div>
 	</div>
+
+	<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
